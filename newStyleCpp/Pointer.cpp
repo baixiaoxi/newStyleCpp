@@ -2,6 +2,34 @@
 #include <vector>
 #include <algorithm>
 
+void RunTest()
+{
+	std::vector<std::shared_ptr<Controller>> v{
+		std::make_shared<Controller>(0),
+		std::make_shared<Controller>(1),
+		std::make_shared<Controller>(2),
+		std::make_shared<Controller>(3),
+		std::make_shared<Controller>(4),
+	};
+
+	for (size_t i = 0; i < v.size(); ++i)
+	{
+		// 弱引用非自身的所有Controller
+		for_each(v.begin(), v.end(), [&v, i](std::shared_ptr<Controller> p) {
+			if (p->Num != i)
+			{
+				v[i]->others.push_back(std::weak_ptr<Controller>(p));
+				std::wcout << L"push_back to v[" << i << "]:" << p->Num << std::endl;
+			}
+			});
+	}
+
+	for_each(v.begin(), v.end(), [](std::shared_ptr<Controller>& p) {
+		std::wcout << L"use_count = " << p.use_count() << std::endl;
+		p->CheckStatuses();
+		});
+}
+
 bool Pointer::test() {
 	A a = { 1, 2 };
 	int A::* pai = 0;
@@ -52,10 +80,10 @@ bool Pointer::test() {
 
 	std::vector<std::shared_ptr<MediaAsset>> photos;
 	std::copy_if(assets.begin(), assets.end(), back_inserter(photos), [](std::shared_ptr<MediaAsset> p) -> bool
-	{
-		std::shared_ptr<Photo> temp = std::dynamic_pointer_cast<Photo>(p);
-		return temp.get() != nullptr;
-	});
+		{
+			std::shared_ptr<Photo> temp = std::dynamic_pointer_cast<Photo>(p);
+			return temp.get() != nullptr;
+		});
 
 	for (const auto& p : photos)
 	{
@@ -79,6 +107,7 @@ bool Pointer::test() {
 
 	return true;
 }
+
 // To declare the object pointed to by the pointer as const or volatile
 // 指针指向的对象是const或volatile
 const char* cpch;

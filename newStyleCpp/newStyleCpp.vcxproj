@@ -164,6 +164,7 @@
     <ClCompile Include="Pointer.cpp" />
     <ClCompile Include="SampleHeader.cpp" />
     <ClCompile Include="FString.cpp" />
+    <ClCompile Include="StructuredBinding.cpp" />
     <ClCompile Include="Template.cpp" />
     <ClCompile Include="TrivialClz.cpp" />
     <ClCompile Include="TrivialClz.h" />
@@ -186,6 +187,7 @@
     <ClInclude Include="Pointer.h" />
     <ClInclude Include="SampleHeader.h" />
     <ClInclude Include="FString.h" />
+    <ClInclude Include="StructuredBinding.h" />
     <ClInclude Include="Template.h" />
     <ClInclude Include="UserDefinedLiteral.h" />
   </ItemGroup>

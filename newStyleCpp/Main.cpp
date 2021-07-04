@@ -17,6 +17,7 @@
 #include "Clz.h"
 #include "Lambda.h"
 #include "Move.h"
+#include "StructuredBinding.h"
 
 int main(int argc, char* argv[], char* envp[]) {
 	std::vector<std::unique_ptr<Fact>> vec;
@@ -38,6 +39,7 @@ int main(int argc, char* argv[], char* envp[]) {
 	vec.push_back(std::make_unique<Clz::Clz>());
 	vec.push_back(std::make_unique<Lambda::Lambda>());
 	vec.push_back(std::make_unique<Move::Move>());
+	vec.push_back(std::make_unique<StructuredBinding::StructuredBinding>());
 
 	int index = 0;
 	for (auto& fact : vec) {

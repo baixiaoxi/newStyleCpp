@@ -17,9 +17,9 @@ public:
 	int m;
 };
 
-std::string(*g)(std::string a);
-void (*x)();
-int (*i)(int i, std::string s, double d);
+//std::string(*g)(std::string a);
+//void (*x)();
+//int (*i)(int i, std::string s, double d);
 
 std::string append(std::string s);
 std::string prepend(std::string s);
@@ -98,30 +98,3 @@ public:
 	}
 };
 
-void RunTest()
-{
-	std::vector<std::shared_ptr<Controller>> v{
-		std::make_shared<Controller>(0),
-		std::make_shared<Controller>(1),
-		std::make_shared<Controller>(2),
-		std::make_shared<Controller>(3),
-		std::make_shared<Controller>(4),
-	};
-
-	for (int i = 0; i < v.size(); ++i)
-	{
-		// 弱引用非自身的所有Controller
-		for_each(v.begin(), v.end(), [&v, i](std::shared_ptr<Controller> p) {
-			if (p->Num != i)
-			{
-				v[i]->others.push_back(std::weak_ptr<Controller>(p));
-				std::wcout << L"push_back to v[" << i << "]:" << p->Num << std::endl;
-			}
-			});
-	}
-
-	for_each(v.begin(), v.end(), [](std::shared_ptr<Controller>& p) {
-		std::wcout << L"use_count = " << p.use_count() << std::endl;
-		p->CheckStatuses();
-		});
-}
