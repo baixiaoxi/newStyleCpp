@@ -13,129 +13,693 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\syntax">
+      <UniqueIdentifier>{06bb5342-14d7-4656-99f7-2b63d319fe2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\syntax">
+      <UniqueIdentifier>{ccf063fd-2959-4d2c-8cec-097b233d37e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\library">
+      <UniqueIdentifier>{610aed04-251b-450b-933b-a443ab141b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\library">
+      <UniqueIdentifier>{b12b8462-1eee-452a-a7b0-45dc9e7f41f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="TrivialClz.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Align.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Characters.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Clz.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Conversion.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Declaration.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumUnion.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="FString.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Lambda.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Move.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Namespace.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="OperatorClz.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Other.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointer.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleHeader.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="StructuredBinding.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Template.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="TrivialClz.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDefinedLiteral.cpp">
+      <Filter>Source Files\syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeTraitsTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Characters.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="UtilityTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="UserDefinedLiteral.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="UnorderedSetTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="SampleHeader.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="UnorderedMapTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Align.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="TypeinfoTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="TrivialClz.h">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="TypeIndexTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="TrivialClz.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="TupleTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Conversion.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ThreadTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Pointer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SystemErrorTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Other.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="StrstringTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="FString.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="StringViewTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Declaration.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="StringTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Template.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="StreambufTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Namespace.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="StdexceptTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="EnumUnion.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="StackTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Function.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SstreamTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="OperatorClz.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SpanTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Clz.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SharedMutexTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Lambda.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SetTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Move.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ScopedAllocatorTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="StructuredBinding.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="RegexTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="RatioTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="RangesTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="OstreamTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionalTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="NumericTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="NewTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="MutexTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryResourceTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="MapTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="LocaleTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ListTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgorithmTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="AllocatorsTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="AnyTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="AtomicTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="BitsetTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="BitTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CassertTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CcomplexTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CctypeTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CerrnoTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CfenvTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CfloatTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CharconvTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ChronoTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CinttypesTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="Ciso646Test.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ClimitsTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ClocaleTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CmathTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CodecvtTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ConditionVariableTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CsetjmpTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CsignalTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CstdalignTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CstdargTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CstdboolTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CstddefTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CstdintTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CstdioTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CstdlibTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CstringTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CtagmathTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CtimeTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CucharTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CvtWbufferTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CvtWstringTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CwcharTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="CwctypeTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="DqueueTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ExecutionTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="FilesystemTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ForwardListTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="FstreamTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionalTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="FutureTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="HashMapTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializerListTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="IomanipTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="IosfwdTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="IosTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="HashSetTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="IostreamTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="IstreamTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="IteratorTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="LimitsTest.cpp">
+      <Filter>Source Files\library</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Align.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Characters.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Clz.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Conversion.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Declaration.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumUnion.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="FString.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Lambda.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Move.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Namespace.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="OperatorClz.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Other.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Pointer.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleHeader.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="StructuredBinding.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Template.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDefinedLiteral.h">
+      <Filter>Header Files\syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeTraitsTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
     <ClInclude Include="Fact.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Characters.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="UtilityTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="UserDefinedLiteral.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="UnorderedSetTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="SampleHeader.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="UnorderedMapTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Align.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="TypeinfoTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Conversion.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="TypeIndexTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Pointer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="TupleTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Other.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="ThreadTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="FString.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="SystemErrorTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Declaration.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="StrstringTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Template.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="StringViewTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Namespace.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="StringTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="EnumUnion.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="StreambufTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Function.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="StdexceptTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="OperatorClz.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="StackTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Clz.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="SstreamTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Lambda.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="SpanTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Move.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="SharedMutexTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="StructuredBinding.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="SetTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ScopedAllocatorTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="RatioTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="RangesTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="OstreamTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionalTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="NumericTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="NewTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="MutexTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryResourceTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="MapTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="LocaleTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ListTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="LimitsTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="IteratorTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="IstreamTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="IostreamTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgorithmTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="AllocatorsTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="AnyTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="AtomicTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="BitsetTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="BitTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CassertTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CcomplexTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CctypeTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CerrnoTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CfenvTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CfloatTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CharconvTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ChronoTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CinttypesTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="Ciso646Test.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ClimitsTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ClocaleTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CmathTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CodecvtTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionVariableTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CsetjmpTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CsignalTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CstdalignTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CstdargTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CstdboolTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CstddefTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CstdintTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CstdioTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CstdlibTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CstringTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CtagmathTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CtimeTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CucharTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CvtWbufferTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CvtWstringTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CwcharTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="CwctypeTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="DqueueTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecutionTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="FilesystemTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ForwardListTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="FstreamTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionalTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="FutureTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="HashMapTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="HashSetTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializerListTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="IomanipTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="IosfwdTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="IosTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
