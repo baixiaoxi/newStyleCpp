@@ -83,8 +83,8 @@ bool Characters::test() {
 	// represents the string: yes\no
 	const char* escaped = "yes\\no";
 
-	const char* str1 = u8"Hello World";
-	const char* str2 = u8"\U0001F607 is O:-)";
+	const char8_t* str1 = u8"Hello World";
+	const char8_t* str2 = u8"\U0001F607 is O:-)";
 
 	const wchar_t* wide = L"zyxw";
 	const wchar_t* newline0 = L"hello\ngoodbye";
@@ -95,7 +95,7 @@ bool Characters::test() {
 	// represents the string: An unescaped \ character
 	const char* raw_narrow = R"(An unescaped \ character)";
 	const wchar_t* raw_wide = LR"(An unescaped \ character)";
-	const char* raw_utf8 = u8R"(An unescaped \ character)";
+	const char8_t* raw_utf8 = u8R"(An unescaped \ character)";
 	const char16_t* raw_utf16 = uR"(An unescaped \ character)";
 	const char32_t* raw_utf32 = UR"(An unescaped \ character)";
 
@@ -109,7 +109,7 @@ bool Characters::test() {
 	//#include <string>
 	//using namespace std::string_literals;
 	string str{ "hello"s };
-	string str20{ u8"Hello World" };
+	u8string str20{ u8"Hello World" };
 	wstring str3{ L"hello"s };
 	u16string str4{ u"hello"s };
 	u32string str5{ U"hello"s };
@@ -126,7 +126,7 @@ bool Characters::test() {
 	// UTF-16 (on Windows) encoded WINKING FACE (U+1F609)
 	const wchar_t* s21 = L"😉 = \U0001F609 is ;-)";
 	// UTF-8  encoded SMILING FACE WITH HALO (U+1F607)
-	const char* s31 = u8"😇 = \U0001F607 is O:-)";
+	const char8_t* s31 = u8"😇 = \U0001F607 is O:-)";
 	// UTF-16 encoded SMILING FACE WITH OPEN MOUTH (U+1F603)
 	const char16_t* s41 = u"😃 = \U0001F603 is :-D";
 	// UTF-32 encoded SMILING FACE WITH SUNGLASSES (U+1F60E)

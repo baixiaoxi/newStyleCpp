@@ -2,12 +2,12 @@
 
 #include "Fact.h"
 
-namespace QueueTest
+namespace DqueueTest
 {
-	class QueueTest : public Fact
+	class DqueueTest : public Fact
 	{
 	public:
-		std::string name() override { return "QueueTest"; }
+		std::string name() override { return "DqueueTest"; }
 		bool test() override;
 	};
 }

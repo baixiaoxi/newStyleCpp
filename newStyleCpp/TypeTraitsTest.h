@@ -1,6 +1,5 @@
 #pragma once
 #include "Fact.h"
-#include <type_traits>
 
 namespace TypeTraitsTest
 {

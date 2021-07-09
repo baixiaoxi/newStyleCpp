@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -90,7 +90,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>
       </AdditionalOptions>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -194,6 +194,7 @@
     <ClCompile Include="Declaration.cpp" />
     <ClCompile Include="DqueueTest.cpp" />
     <ClCompile Include="EnumUnion.cpp" />
+    <ClCompile Include="ExceptionTest.cpp" />
     <ClCompile Include="ExecutionTest.cpp" />
     <ClCompile Include="FilesystemTest.cpp" />
     <ClCompile Include="ForwardListTest.cpp" />
@@ -246,7 +247,7 @@
     <ClCompile Include="StreambufTest.cpp" />
     <ClCompile Include="StringTest.cpp" />
     <ClCompile Include="StringViewTest.cpp" />
-    <ClCompile Include="StrstringTest.cpp" />
+    <ClCompile Include="StrstreamTest.cpp" />
     <ClCompile Include="StructuredBinding.cpp" />
     <ClCompile Include="SystemErrorTest.cpp" />
     <ClCompile Include="Template.cpp" />
@@ -309,6 +310,7 @@
     <ClInclude Include="Declaration.h" />
     <ClInclude Include="DqueueTest.h" />
     <ClInclude Include="EnumUnion.h" />
+    <ClInclude Include="ExceptionTest.h" />
     <ClInclude Include="ExecutionTest.h" />
     <ClInclude Include="Fact.h" />
     <ClInclude Include="Characters.h" />
@@ -361,10 +363,11 @@
     <ClInclude Include="StreambufTest.h" />
     <ClInclude Include="StringTest.h" />
     <ClInclude Include="StringViewTest.h" />
-    <ClInclude Include="StrstringTest.h" />
+    <ClInclude Include="StrstreamTest.h" />
     <ClInclude Include="StructuredBinding.h" />
     <ClInclude Include="SystemErrorTest.h" />
     <ClInclude Include="Template.h" />
+    <ClInclude Include="Test.h" />
     <ClInclude Include="ThreadTest.h" />
     <ClInclude Include="TupleTest.h" />
     <ClInclude Include="TypeIndexTest.h" />
