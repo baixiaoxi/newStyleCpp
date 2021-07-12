@@ -3,6 +3,7 @@
 #include "StrstreamTest.h"
 #include <strstream>
 
+// Describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a char array object
 namespace StrstreamTest
 {
 	using namespace std;
@@ -46,7 +47,7 @@ namespace StrstreamTest
 		x.rdbuf()->freeze(false);
 		// 6.pcount
 		cout << x.rdbuf()->pcount() << endl;
-
+		
 		// istream->istrstream
 		// ostream->ostrstream
 		// iostream->strstream

@@ -7,6 +7,10 @@ namespace OptionalTest
 
 	bool OptionalTest::test()
 	{
+		optional<int> opt = make_optional<int>(1);
+		bool result = opt.has_value();
+		nullopt_t no = nullopt;
+
 		return true;
 	}
 }

@@ -7,6 +7,13 @@ namespace SstreamTest
 
 	bool SstreamTest::test()
 	{
+		basic_istringstream<char> bi;
+		istringstream bi2;
+		basic_ostringstream<char> bo;
+		ostringstream bo2;
+		basic_stringstream<char> bs;
+		stringstream bs2;
+
 		return true;
 	}
 }

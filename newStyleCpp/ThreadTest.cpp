@@ -5,6 +5,8 @@
 namespace ThreadTest
 {
 	using namespace std;
+	// Thread objects can be moved but not copied.
+	// Therefore, a thread of execution can be associated with only one thread object
 
 	void foo()
 	{
@@ -13,7 +15,7 @@ namespace ThreadTest
 		// 2.sleep_until
 		this_thread::sleep_until(chrono::steady_clock::now() + 2000ms);
 		// 3.yield
-		this_thread::yield();
+		this_thread::yield();// Signals the operating system to run other threads, even if the current thread would ordinarily continue to run
 	}
 
 	bool ThreadTest::test()

@@ -9,9 +9,10 @@ namespace RegexTest
 	{
 		regex::value_type elem = 'x';
 		regex::flag_type flag = regex::grep;
+		cmatch cmat;
 
 		regex rx0;
-		cout << "match(\"abc\", \"\") == " << boolalpha << regex_match("abc", rx0) << endl;
+		cout << "match(\"abc\", \"\") == " << boolalpha << regex_match("abc", cmat, rx0, regex_constants::match_flag_type::format_default) << endl;
 		regex rx1("abcd", regex::ECMAScript);
 		cout << "match(\"abc\", \"abcd\") == " << boolalpha << regex_match("abc", rx1) << endl;
 
@@ -28,6 +29,8 @@ namespace RegexTest
 		regex rx5(str.begin(), str.end() - 1);
 		cout << "match(string(\"abc\"), \"abc\") == " << boolalpha << regex_match("abc", rx5) << endl;
 		cout << endl;
+
+		regex::flag_type flags = rx0.flags();
 
 		// assignments
 		rx0 = "abc";

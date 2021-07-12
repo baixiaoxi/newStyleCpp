@@ -240,9 +240,6 @@
     <ClCompile Include="CinttypesTest.cpp">
       <Filter>Source Files\library</Filter>
     </ClCompile>
-    <ClCompile Include="Ciso646Test.cpp">
-      <Filter>Source Files\library</Filter>
-    </ClCompile>
     <ClCompile Include="ClimitsTest.cpp">
       <Filter>Source Files\library</Filter>
     </ClCompile>
@@ -367,6 +364,15 @@
       <Filter>Source Files\library</Filter>
     </ClCompile>
     <ClCompile Include="StrstreamTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="VariantTest.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="ValarrayTest.cpp">
       <Filter>Source Files\library</Filter>
     </ClCompile>
   </ItemGroup>
@@ -590,9 +596,6 @@
     <ClInclude Include="CinttypesTest.h">
       <Filter>Header Files\library</Filter>
     </ClInclude>
-    <ClInclude Include="Ciso646Test.h">
-      <Filter>Header Files\library</Filter>
-    </ClInclude>
     <ClInclude Include="ClimitsTest.h">
       <Filter>Header Files\library</Filter>
     </ClInclude>
@@ -708,7 +711,16 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StrstreamTest.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="VariantTest.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="ValarrayTest.h">
+      <Filter>Header Files\library</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -50,7 +50,17 @@ namespace StringTest
 		auto cStr0 = s1.c_str();
 		// 11.shrink_to_fit
 		s1.shrink_to_fit();
-		// char_traits
+		// 12.strod
+		string dStr = "123";
+		size_t* dVal = 0;
+		stod(dStr, dVal);
+		// 13.to_string
+		dStr = to_string(*dVal);
+		// 14.traits_type
+		basic_string<char>::traits_type;// char_traits<char>
+		// 15.value_type
+		basic_string<char>::value_type vv = 'a';
+		// 16.char_traits
 		char ChTo = 't';
 		const char ChFrom = 'f';
 		char_traits<char>::assign(ChTo, ChFrom);
@@ -62,6 +72,7 @@ namespace StringTest
 		int comp1;
 		comp1 = char_traits<char>::compare(cs2, cs3, 2);
 		char_traits<char>::int_type int2 = char_traits<char>::eof();
+
 
 		return true;
 	}

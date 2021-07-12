@@ -26,7 +26,7 @@ namespace SpanTest
 		Show(numbers);
 
 		int a[] = { 0, 1, 2 };
-		span<int> mySpan(a);
+		span<int, 3> mySpan(a);// dynamic_extent
 		auto bytes = as_bytes(mySpan);
 		auto bytes2 = as_writable_bytes(mySpan);
 

@@ -19,6 +19,7 @@
 #include "Move.h"
 #include "StructuredBinding.h"
 #include "TypeTraitsTest.h"
+#include "ValarrayTest.h"
 
 int main(int argc, char* argv[], char* envp[]) {
 	std::vector<std::unique_ptr<Fact>> vec;
@@ -42,6 +43,7 @@ int main(int argc, char* argv[], char* envp[]) {
 	vec.push_back(std::make_unique<Move::Move>());
 	vec.push_back(std::make_unique<StructuredBinding::StructuredBinding>());
 	vec.push_back(std::make_unique<TypeTraitsTest::TypeTraitsTest>());
+	vec.push_back(std::make_unique<ValarrayTest::ValarrayTest>());
 
 	int index = 0;
 	for (auto& fact : vec) {

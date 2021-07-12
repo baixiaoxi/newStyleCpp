@@ -5,8 +5,6 @@
 #include <unordered_map>
 #include <memory>
 
-// type_index
-// hash
 namespace TypeIndexTest
 {
 	using namespace std;
@@ -14,7 +12,9 @@ namespace TypeIndexTest
 	struct A {
 		virtual ~A() {}
 	};
+
 	struct B : A {};
+
 	struct C : A {};
 
 	bool TypeIndexTest::test()
@@ -25,6 +25,10 @@ namespace TypeIndexTest
 		type_names[type_index(typeid(A))] = "A";
 		type_names[type_index(typeid(B))] = "B";
 		type_names[type_index(typeid(C))] = "C";
+
+		type_index intTypeIndex = type_index(typeid(int));
+		const char* name = intTypeIndex.name();
+		size_t hashsCode = intTypeIndex.hash_code();
 
 		int i;
 		double d;

@@ -165,7 +165,6 @@
     <ClCompile Include="CharconvTest.cpp" />
     <ClCompile Include="ChronoTest.cpp" />
     <ClCompile Include="CinttypesTest.cpp" />
-    <ClCompile Include="Ciso646Test.cpp" />
     <ClCompile Include="ClimitsTest.cpp" />
     <ClCompile Include="ClocaleTest.cpp" />
     <ClCompile Include="Clz.cpp" />
@@ -262,6 +261,9 @@
     <ClCompile Include="UnorderedSetTest.cpp" />
     <ClCompile Include="UserDefinedLiteral.cpp" />
     <ClCompile Include="UtilityTest.cpp" />
+    <ClCompile Include="ValarrayTest.cpp" />
+    <ClCompile Include="VariantTest.cpp" />
+    <ClCompile Include="VectorTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AlgorithmTest.h" />
@@ -281,7 +283,6 @@
     <ClInclude Include="CharconvTest.h" />
     <ClInclude Include="ChronoTest.h" />
     <ClInclude Include="CinttypesTest.h" />
-    <ClInclude Include="Ciso646Test.h" />
     <ClInclude Include="ClimitsTest.h" />
     <ClInclude Include="ClocaleTest.h" />
     <ClInclude Include="Clz.h" />
@@ -377,6 +378,9 @@
     <ClInclude Include="UnorderedSetTest.h" />
     <ClInclude Include="UserDefinedLiteral.h" />
     <ClInclude Include="UtilityTest.h" />
+    <ClInclude Include="ValarrayTest.h" />
+    <ClInclude Include="VariantTest.h" />
+    <ClInclude Include="VectorTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
