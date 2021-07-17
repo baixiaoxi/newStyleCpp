@@ -24,8 +24,7 @@ namespace SharedMutexTest
 		result = stm.try_lock_shared_until(chrono::system_clock::now() + 100ms);
 
 		// 3.shared_lock
-		mutex mu;
-		// shared_lock sl(mu);
+		shared_lock sl(stm);
 
 		return true;
 	}

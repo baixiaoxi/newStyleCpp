@@ -6,6 +6,7 @@
 namespace CharconvTest
 {
 	using namespace std;
+
 	template<typename T>
 	void TestToChars(const T t)
 	{

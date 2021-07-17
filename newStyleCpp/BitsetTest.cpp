@@ -9,6 +9,7 @@ namespace BitsetTest
 	{
 		bitset<5> myBitSet;
 		myBitSet.set(3, true);
+		myBitSet = myBitSet & myBitSet;
 		bitset<5>::reference secondBit = myBitSet[1];
 		secondBit.flip();
 		myBitSet.flip();

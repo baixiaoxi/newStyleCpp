@@ -7,20 +7,21 @@ namespace CctypeTest
 
 	bool CctypeTest::test()
 	{
-		isalnum('c');
-		isalpha('c');
-		isblank('c');
-		iscntrl('c');
-		isdigit('c');
-		isgraph('c');
-		islower('c');
-		isprint('c');
-		ispunct('c');
-		isspace('c');
-		isupper('c');
-		isxdigit('c');
-		tolower('c');
-		toupper('c');
+		int result;
+		result = isalnum('c');
+		result = isalpha('c');
+		result = isblank('c');
+		result = iscntrl('c');
+		result = isdigit('c');
+		result = isgraph('c');
+		result = islower('c');
+		result = isprint('c');
+		result = ispunct('c');
+		result = isspace('c');
+		result = isupper('c');
+		result = isxdigit('c');
+		result = tolower('c');
+		result = toupper('c');
 
 		return true;
 	}

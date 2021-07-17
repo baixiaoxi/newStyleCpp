@@ -108,7 +108,8 @@ namespace ChronoTest
 		chrono::system_clock::time_point minPoint = now3.min();
 		chrono::system_clock::duration dur1 = now3.time_since_epoch();
 		// 19.time_zone
-		// chrono::time_zone timeZone = chrono::system_clock::time_point
+		const chrono::time_zone* timeZone = chrono::current_zone();
+		const chrono::time_zone* timeZone2 = chrono::get_tzdb().current_zone();
 		// 20.treat_as_floating_point
 		cout << typeid(chrono::treat_as_floating_point<float>::type).name() << endl;
 		// 21.weekday
@@ -156,6 +157,14 @@ namespace ChronoTest
 		chrono::year_month_weekday_last ymwl2{ 1997y / chrono::January / chrono::Wednesday[chrono::last] };
 		cout << ymwl2 << ymwl2.ok() << ymwl2.month() << ymwl2.year() << static_cast<chrono::sys_days>(ymwl2) <<
 			static_cast<chrono::sys_days>(ymwl2) << ymwl2.weekday() << ymwl2.weekday_last() << endl;
+		// 29.get_tzdb_list
+		chrono::tzdb_list& tzdbList = chrono::get_tzdb_list();
+		// 30.locate_zone
+		const chrono::time_zone* ctimezone = chrono::locate_zone("time zone1");
+		// 31.reload_tzdb
+		const chrono::tzdb& tzdb = chrono::reload_tzdb();
+		// 32.remote_version
+		string removeVersion = chrono::remote_version();
 
 		return true;
 	}

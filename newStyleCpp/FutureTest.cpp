@@ -3,6 +3,7 @@
 namespace FutureTest
 {
 	using namespace std;
+
 	bool FutureTest::test()
 	{
 		return true;

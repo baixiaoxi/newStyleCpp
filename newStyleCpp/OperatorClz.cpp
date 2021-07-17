@@ -1,7 +1,24 @@
 #include "OperatorClz.h"
 
+typedef void(*ptf)();
+void func()
+{
+	std::cout << "from func" << std::endl;
+}
+
+struct S
+{
+	operator ptf()
+	{
+		return func;
+	}
+};
+
 bool OperatorClz::OperatorClz::test()
 {
+	S s;
+	s();//operates as s.operator ptf()()
+
 	IntVector v(10);
 	int i;
 

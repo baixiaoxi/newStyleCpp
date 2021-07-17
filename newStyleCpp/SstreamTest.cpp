@@ -13,6 +13,7 @@ namespace SstreamTest
 		ostringstream bo2;
 		basic_stringstream<char> bs;
 		stringstream bs2;
+		basic_stringbuf<char> bsf;
 
 		return true;
 	}

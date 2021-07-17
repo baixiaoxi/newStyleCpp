@@ -8,6 +8,8 @@ namespace BitTest
 
 	bool BitTest::test()
 	{
+		endian end = endian::little;
+
 		float f = numeric_limits<float>::infinity();
 		int i = bit_cast<int>(f);
 		cout << "float f = " << hex << f << "\nbit_cast<int>(f) = " << hex << i << '\n';

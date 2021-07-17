@@ -6,7 +6,7 @@ namespace TrivialClz
 {
 	class TrivialClz final : public Fact {
 	public:
-		bool test() override;  
+		bool test() override;
 		std::string name() override { return "Trivial"; }
 	};
 
@@ -96,6 +96,7 @@ namespace TrivialClz
 
 	struct Pod5
 	{
+	private:
 		int a;
 		int b;
 	};

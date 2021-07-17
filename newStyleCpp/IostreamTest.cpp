@@ -3,6 +3,7 @@
 namespace IostreamTest
 {
 	using namespace std;
+
 	bool IostreamTest::test()
 	{
 		return true;
